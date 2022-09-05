@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40660EE228C60ADB00C2B9A7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40660EE128C60ADB00C2B9A7 /* LocationManager.swift */; };
 		40A94FB728C5500A00E9CF93 /* PreyerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A94FB628C5500A00E9CF93 /* PreyerAppApp.swift */; };
 		40A94FB928C5500A00E9CF93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A94FB828C5500A00E9CF93 /* ContentView.swift */; };
 		40A94FBB28C5500C00E9CF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A94FBA28C5500C00E9CF93 /* Assets.xcassets */; };
 		40A94FBE28C5500C00E9CF93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A94FBD28C5500C00E9CF93 /* Preview Assets.xcassets */; };
+		40A94FC528C5501700E9CF93 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A94FC428C5501700E9CF93 /* Model.swift */; };
+		40A94FC728C5518600E9CF93 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A94FC628C5518600E9CF93 /* ViewModel.swift */; };
+		40A94FCA28C5554B00E9CF93 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A94FC928C5554B00E9CF93 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40660EE128C60ADB00C2B9A7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		40A94FB328C5500A00E9CF93 /* PreyerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreyerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A94FB628C5500A00E9CF93 /* PreyerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreyerAppApp.swift; sourceTree = "<group>"; };
 		40A94FB828C5500A00E9CF93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40A94FBA28C5500C00E9CF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40A94FBD28C5500C00E9CF93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40A94FC428C5501700E9CF93 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		40A94FC628C5518600E9CF93 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		40A94FC828C5536D00E9CF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		40A94FC928C5554B00E9CF93 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		40A94FB528C5500A00E9CF93 /* PreyerApp */ = {
 			isa = PBXGroup;
 			children = (
+				40A94FC828C5536D00E9CF93 /* Info.plist */,
 				40A94FB628C5500A00E9CF93 /* PreyerAppApp.swift */,
 				40A94FB828C5500A00E9CF93 /* ContentView.swift */,
+				40A94FC428C5501700E9CF93 /* Model.swift */,
+				40A94FC928C5554B00E9CF93 /* Extensions.swift */,
+				40A94FC628C5518600E9CF93 /* ViewModel.swift */,
+				40660EE128C60ADB00C2B9A7 /* LocationManager.swift */,
 				40A94FBA28C5500C00E9CF93 /* Assets.xcassets */,
 				40A94FBC28C5500C00E9CF93 /* Preview Content */,
 			);
@@ -137,7 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A94FCA28C5554B00E9CF93 /* Extensions.swift in Sources */,
+				40A94FC528C5501700E9CF93 /* Model.swift in Sources */,
+				40660EE228C60ADB00C2B9A7 /* LocationManager.swift in Sources */,
 				40A94FB928C5500A00E9CF93 /* ContentView.swift in Sources */,
+				40A94FC728C5518600E9CF93 /* ViewModel.swift in Sources */,
 				40A94FB728C5500A00E9CF93 /* PreyerAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +285,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PreyerApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2BF2GNXT6R;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PreyerApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "نحتاج الموقع لمعرفة مواقيت الصلوات.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,9 +316,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PreyerApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2BF2GNXT6R;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PreyerApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "نحتاج الموقع لمعرفة مواقيت الصلوات.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
